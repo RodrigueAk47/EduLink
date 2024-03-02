@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contain {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 390px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="matricule"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #36454f;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.link-nav {
+    color: white;
+    margin-left: 15px;
+}
+
+.link-nav:hover {
+    color: aqua;
+}
+
+.main-link {
+    margin: 15px;
+
+}
+
+
+/* Main Card */
+.card-container {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.main-logo {
+    width: 30%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list {
+    margin: 15px;
+}
+
+.group-list {
+    list-style: none; /* Supprimer les puces par défaut */
+    padding: 0;
+}
+
+.group-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer; /* Effet pointeur sur les éléments de la liste */
+}
+
+.group-list li:hover { /* Effet de survol */
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Detail page */
+
+.course-container {
+    margin: 20px;
+}
+
+.course-details {
+
+    margin-top: 52px;
+}
