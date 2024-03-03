@@ -34,6 +34,8 @@ require_once 'header.php';
             </div>
         <button type="submit">Mettre à jour</button>
     </form>
+    <img src="../assets/img/construc.png">
+    <div style="float: right; font-size: 50px">En Construction</div>
 </div>
 </body>
 </html>
