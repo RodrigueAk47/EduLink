@@ -5,7 +5,7 @@ require_once 'header.php';
 ?>
 
 <main>
-    <h1>Liste des cours</h1>
+    <h1>Matieres</h1>
     <div class="list">
         <?php if (!empty($lists)): ?>
             <ul class="group-list">
@@ -16,7 +16,7 @@ require_once 'header.php';
                 <?php endforeach; ?>
             </ul>
         <?php else: ?>
-            <p>Aucune catégorie trouvée pour cette classe.</p>
+            <p>Aucune matiere trouvée pour ce semestre.</p>
         <?php endif; ?>
     </div>
 </main>

@@ -4,6 +4,7 @@ if (!isset($_SESSION['id']) || $_SESSION['role'] != 'admin') {
     header('/index.php');
 }
 require_once '../Models/Database/Database.php';
+$title = 'admin';
 require_once 'header.php';
 
 
@@ -26,12 +27,12 @@ require_once 'header.php';
             <input type="text" name="course_list_name" value="">
         </div>
         <h2>Cours</h2>
-            <div>
-                <label>Nom du cours:</label>
-                <input type="text" name="course_names[]" value="">
-                <label>Description:</label>
-                <textarea name="course_descriptions[]"></textarea>
-            </div>
+        <div>
+            <label>Nom du cours:</label>
+            <input type="text" name="course_names[]" value="">
+            <label>Description:</label>
+            <textarea name="course_descriptions[]"></textarea>
+        </div>
         <button type="submit">Mettre à jour</button>
     </form>
     <img src="../assets/img/construc.png">

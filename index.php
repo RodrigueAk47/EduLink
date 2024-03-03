@@ -38,7 +38,7 @@ $semesters = $db->getSemestersForClass($classes);
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Login EduLink</title>
+    <title>EduLink</title>
     <link rel="stylesheet" href="assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -51,7 +51,7 @@ $semesters = $db->getSemestersForClass($classes);
             <a class="link-nav" href="Views/../index.php">Cours</a>
             <a class="link-nav" href="Views/resultats.php">Resultats</a>
 
-            <?php if (isset($_SESSION['id']) && $_SESSION['role'] == 'admin'):?>
+            <?php if (isset($_SESSION['id']) && $_SESSION['role'] == 'admin'): ?>
                 <a class="link-nav" href="Views/admin.php">Admin</a>
             <?php endif; ?>
             <a class="link-nav" href="Views/logout.php">Deconnexion</a>
@@ -61,10 +61,10 @@ $semesters = $db->getSemestersForClass($classes);
 
 <main>
     <h1>Bienvenue sur <span>Edu Link <span></h1>
-    <p class="present-name"><?= $username?></p>
+    <p class="present-name"><?= $username ?></p>
     <!-- Slideshow container -->
 
-<h1 style="margin-top: 50px">Cours, TD & Examens</h1>
+    <h1 style="margin-top: 50px">Cours, TD & Examens</h1>
     <div class="card-container">
         <?php /** @var TYPE_NAME $classes */
         foreach ($classes as $class): ?>
@@ -129,8 +129,6 @@ $semesters = $db->getSemestersForClass($classes);
     }
 
 
-
-
     function showSlides() {
         let i;
         let slides = document.getElementsByClassName("mySlides");
@@ -138,8 +136,10 @@ $semesters = $db->getSemestersForClass($classes);
             slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
         setTimeout(showSlides, 10000); // Change image every 2 seconds
     }
 </script>

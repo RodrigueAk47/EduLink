@@ -5,6 +5,7 @@ body {
     padding: 0;
 
 }
+
 p {
     font-size: 16px;
 }
@@ -176,7 +177,6 @@ a {
 }
 
 
-
 .bulletin {
     max-width: 600px;
     margin: auto;
@@ -202,7 +202,6 @@ table, th, td {
 }
 
 
-
 th {
     background-color: #f2f2f2;
 }
@@ -225,7 +224,9 @@ p {
     margin-right: 50px;
 }
 
-* {box-sizing:border-box}
+* {
+    box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -264,7 +265,7 @@ p {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -312,8 +313,12 @@ footer {
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
@@ -323,6 +328,7 @@ footer {
 
         flex-wrap: nowrap;
     }
+
     .card {
         width: 70%;
     }
@@ -330,6 +336,7 @@ footer {
     .main-logo {
         width: 175px;
     }
+
     .center-logo {
         display: block;
     }

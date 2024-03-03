@@ -42,7 +42,8 @@ require_once 'header.php';
         </tr>
 
     </table>
-    <p>Moyenne du semestre: <span id="moyenne">14.75</span>  <span style="background-color: #3498db; color: white"> ADMIS </span></p>
+    <p>Moyenne du semestre: <span id="moyenne">14.75</span> <span
+                style="background-color: #3498db; color: white"> ADMIS </span></p>
 </div>
 </body>
 </html>

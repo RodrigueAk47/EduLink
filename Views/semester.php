@@ -14,7 +14,7 @@ require_once 'header.php';
 </head>
 <body>
 <main>
-    <h1>Liste des semestres par classe</h1>
+    <h1>Semestres</h1>
 
     <div class="list">
         <?php if (!empty($semesters)): ?>
@@ -27,7 +27,7 @@ require_once 'header.php';
                 <?php endforeach; ?>
             </ul>
         <?php else: ?>
-            <p>Aucune catégorie trouvée pour cette classe.</p>
+            <p>Aucun semestre trouvée pour ce niveau.</p>
         <?php endif; ?>
     </div>
 

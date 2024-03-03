@@ -49,15 +49,14 @@ $classes = $db->getClasses();
 }*/
 
 
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title><?= $title?></title>
+    <title><?= $title ?></title>
     <link rel="stylesheet" href="../assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
 <header>
@@ -67,7 +66,7 @@ $classes = $db->getClasses();
         <div class="main-link">
             <a class="link-nav" href="../index.php">Cours</a>
             <a class="link-nav" href="../Views/resultats.php">Resultats</a>
-            <?php if (isset($_SESSION['id']) && $_SESSION['role'] == 'admin'):?>
+            <?php if (isset($_SESSION['id']) && $_SESSION['role'] == 'admin'): ?>
                 <a class="link-nav" href="../Views/admin.php">Admin</a>
             <?php endif; ?>
             <a class="link-nav" href="../Views/logout.php">Deconnexion</a>

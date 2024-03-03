@@ -1,15 +1,15 @@
 CREATE TABLE user
 (
     id        INT AUTO_INCREMENT PRIMARY KEY,
-    name      VARCHAR(255)        NOT NULL,
-    matricule VARCHAR(20) UNIQUE  NOT NULL,
-    email     VARCHAR(255) UNIQUE NOT NULL,
-    password  VARCHAR(255)        NOT NULL,
-    role ENUM('user', 'admin') NOT NULL DEFAULT 'user'
+    name      VARCHAR(255)           NOT NULL,
+    matricule VARCHAR(20) UNIQUE     NOT NULL,
+    email     VARCHAR(255) UNIQUE    NOT NULL,
+    password  VARCHAR(255)           NOT NULL,
+    role      ENUM ('user', 'admin') NOT NULL DEFAULT 'user'
 );
 
 INSERT INTO user (name, matricule, email, password, role)
-VALUES ('RODRIGUE ASSOHOU', '123456', 'rodrigueassohou@gmail.com', 'password123','admin');
+VALUES ('RODRIGUE ASSOHOU', '123456', 'rodrigueassohou@gmail.com', 'password123', 'admin');
 
 /* Cree mes tables pour les cours */
 CREATE TABLE classes

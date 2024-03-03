@@ -17,7 +17,7 @@ class User
 
     public function __construct($name, $matricule, $email, $passwordHash, $id = null, $role = 'user')
     {
-        $this-> role= $role;
+        $this->role = $role;
         $this->id = $id;
         $this->name = $name;
         $this->matricule = $matricule;
@@ -76,6 +76,7 @@ class User
     {
         return $this->role;
     }
+
     public function getPasswordHash(): string
     {
         return $this->passwordHash;
