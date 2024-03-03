@@ -22,12 +22,12 @@ class Database
     public function getUserByEmail($email)
     {
         try {
-            $stmt = $this->conectdb->prepare("SELECT id, name, matricule, email, password FROM user WHERE email = :email");
+            $stmt = $this->conectdb->prepare("SELECT id, name, matricule, email, password, role FROM user WHERE email = :email");
             $stmt->bindParam(":email", $email, PDO::PARAM_STR);
             $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
             if ($result) {
-                return new User($result['name'], $result['matricule'], $result['email'], $result['password'], (int)$result['id']);
+                return new User($result['name'], $result['matricule'], $result['email'], $result['password'], (int)$result['id'], $result['role']);
             } else {
                 return null;
             }
@@ -117,6 +117,9 @@ class Database
             return false;
         }
     }
+
+
+
 
 
 }

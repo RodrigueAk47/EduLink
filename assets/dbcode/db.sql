@@ -53,9 +53,7 @@ VALUES (1, 'Semestre 1');
 INSERT INTO course_lists (course_lists.semester_id, name)
 VALUES (1, 'Logique mathematique');
 INSERT INTO courses (course_list_id, name, description)
-VALUES (1, 'Logique mathematique', "La logique mathématique, ou logique formelle, est une discipline des mathématiques qui définit et étudie les représentations formelles du langage mathématique. Les objets fondamentaux de la logique mathématiques sont les formules modélisant les énoncés mathématiques, les dérivations modélisant les raisonnements mathématiques et les sémantiques établissant les liens entre ces modèles et les objets qu'ils sont censés représenter.
-
-Sous-domaines de la logique mathématique");
+VALUES (1, 'Logique mathematique', 'test');
 
 
 

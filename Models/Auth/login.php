@@ -42,11 +42,12 @@ if ($user && password_verify($password, $user->getPasswordHash())) { // Assuming
     $_SESSION["email"] = $user->getEmail();
     $_SESSION["matricule"] = $user->getMatricule();
     $_SESSION["password"] = $user->getPasswordHash();
+    $_SESSION["role"] = $user->getRole();
 
     // Implement CSRF protection (e.g., CSRF token generation and validation)
     // ...
 
-    header("Location: /index.php"); // Redirect to protected page
+    header("Location: /index.php?"); // Redirect to protected page
 } else {
     // Login failed, display specific error message
     echo "Invalid email or password";

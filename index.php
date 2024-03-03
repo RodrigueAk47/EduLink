@@ -39,22 +39,31 @@ $semesters = $db->getSemestersForClass($classes);
 <head>
     <meta charset="UTF-8">
     <title>Login EduLink</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
     <div class="header-nav">
         <img class="main-logo" src="/assets/img/esatic.webp" alt="esatic logo">
+        <img class="center-logo" src="assets/img/e.png">
         <div class="main-link">
-            <a class="link-nav" href="#">Resultats</a>
-            <a class="link-nav" href="Views/logout.php">Se deconnecter</a>
+            <a class="link-nav" href="Views/../index.php">Cours</a>
+            <a class="link-nav" href="Views/resultats.php">Resultats</a>
+
+            <?php if (isset($_SESSION['id']) && $_SESSION['role'] == 'admin'):?>
+                <a class="link-nav" href="Views/admin.php">Admin</a>
+            <?php endif; ?>
+            <a class="link-nav" href="Views/logout.php">Deconnexion</a>
         </div>
     </div>
 </header>
 
 <main>
-    <div>Bienvenue sur ton espace Edu Link <?= /** @var TYPE_NAME $username */
-        $username ?></div>
+    <h1>Bienvenue sur <span>Edu Link <span></h1>
+    <p class="present-name"><?= $username?></p>
+
+<h1 style="margin-top: 50px">Cours, TD & Examens</h1>
     <div class="card-container">
         <?php /** @var TYPE_NAME $classes */
         foreach ($classes as $class): ?>

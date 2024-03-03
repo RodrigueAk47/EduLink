@@ -1,5 +1,6 @@
 <?php
 require_once '../Models/Database/Database.php';
+$title = 'detail';
 require_once 'header.php';
 
 
@@ -19,10 +20,11 @@ require_once 'header.php';
 
     </div>
     <?php endforeach; ?>
-    </ul>
+
     <?php else: ?>
         <p>Aucune catégorie trouvée pour cette classe.</p>
     <?php endif; ?>
+
 </main>
 </body>
 </html>

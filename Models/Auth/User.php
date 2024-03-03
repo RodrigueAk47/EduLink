@@ -12,9 +12,12 @@ class User
     protected string $email;
     protected string $passwordHash;
 
+    protected string $role;
 
-    public function __construct($name, $matricule, $email, $passwordHash, $id = null)
+
+    public function __construct($name, $matricule, $email, $passwordHash, $id = null, $role = 'user')
     {
+        $this-> role= $role;
         $this->id = $id;
         $this->name = $name;
         $this->matricule = $matricule;
@@ -66,6 +69,13 @@ class User
         $this->id = $id;
     }
 
+    /**
+     * @return string
+     */
+    public function getRole(): string
+    {
+        return $this->role;
+    }
     public function getPasswordHash(): string
     {
         return $this->passwordHash;

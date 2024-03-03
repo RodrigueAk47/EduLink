@@ -1,5 +1,6 @@
 <?php
 require_once '../Models/Database/Database.php';
+$title = 'matieres';
 require_once 'header.php';
 ?>
 

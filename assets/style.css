@@ -1,8 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
     margin: 0;
     padding: 0;
 
+}
+p {
+    font-size: 16px;
 }
 
 .contain {
@@ -21,7 +25,7 @@ body {
     padding: 60px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 390px;
+    max-width: 90%;
 }
 
 h1 {
@@ -63,10 +67,11 @@ button:hover {
 
 .header-nav {
     display: flex;
-    justify-content: space-between;
     background-color: #36454f;
     padding: 10px;
     margin-bottom: 40px;
+    justify-content: center; /* Vous pouvez utiliser d'autres valeurs comme 'flex-start', 'flex-end', 'space-between', etc. */
+    align-items: center;
 }
 
 .link-nav {
@@ -86,10 +91,11 @@ button:hover {
 
 /* Main Card */
 .card-container {
+    display: flex;
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    display: flex;
+
     flex-wrap: wrap;
     gap: 20px;
     max-width: 100%;
@@ -120,6 +126,12 @@ button:hover {
 
 .main-logo {
     width: 30%;
+    height: 20%;
+}
+
+.center-logo {
+    width: 60px;
+    display: none;
 }
 
 h1 {
@@ -162,3 +174,86 @@ a {
 
     margin-top: 52px;
 }
+
+
+
+.bulletin {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.bulletin1 {
+    margin: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+th {
+    background-color: #f2f2f2;
+}
+
+p {
+    margin-top: 20px;
+}
+
+#moyenne {
+    font-weight: bold;
+}
+
+.present-name {
+    text-align: center;
+    color: blueviolet;
+}
+
+.course-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+    .card-container {
+
+
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: 70%;
+    }
+
+    .main-logo {
+        width: 175px;
+    }
+    .center-logo {
+        display: block;
+    }
+
+    .header-nav {
+        justify-content: space-between;
+    }
+
+    .group-list li {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
+}
+

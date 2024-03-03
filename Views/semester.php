@@ -1,6 +1,9 @@
 <?php
+
 require_once '../Models/Database/Database.php';
+$title = 'Semestre';
 require_once 'header.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
