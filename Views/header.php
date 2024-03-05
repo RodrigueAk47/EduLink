@@ -70,6 +70,7 @@ $classes = $db->getClasses();
                 <a class="link-nav" href="../Views/admin.php">Admin</a>
             <?php endif; ?>
             <a class="link-nav" href="../Views/logout.php">Deconnexion</a>
+
         </div>
     </div>
 </header>
